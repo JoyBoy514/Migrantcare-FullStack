@@ -1,0 +1,24 @@
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Login from "./pages/login";
+import Patient from "./pages/patient";
+import Doctor from "./pages/doctor";
+import Dashboard from './pages/dashboard'
+import Register from './pages/register'
+
+function App() {
+
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login/>}/>
+        <Route path="/patient" element={<Patient/>}/>
+        <Route path="/doctor" element={<Doctor/>}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
+        <Route path="/register" element={<Register/>}/>
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default App;
